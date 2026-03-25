@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Barate 2010 SL - Electricista autorizado en Madrid. Certificación de instalaciones eléctricas, boletines, instalaciones y reparaciones. Llámanos: 666 05 78 55.">
-    <meta name="keywords" content="electricista Madrid, certificación eléctrica, boletín eléctrico, instalación eléctrica, Barate 2010, electricista Madrid 28018">
+    <meta name="description" content="Barate 2010 SL - Instalaciones Eléctricas en Madrid. Certificación oficial, averías y mantenimiento. Llámanos: 666 05 78 55.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Barate 2010 SL - Electricista Certificado en Madrid">
-    <meta property="og:description" content="Servicio profesional de electricidad en Madrid. Certificaciones, boletines y reparaciones. Llama al 666 05 78 55.">
-    <meta property="og:type" content="website">
-    <title>Barate 2010 SL | Electricista Certificado en Madrid</title>
+    <title>Barate 2010 SL | Instalaciones Eléctricas Certificadas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,10 +17,10 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="nav-logo" id="nav-logo">
-                <div class="logo-icon">⚡</div>
-                <div class="logo-text">
-                    <span class="logo-brand">Barate 2010</span>
-                    <span class="logo-sub">Electricidad</span>
+                <!-- Expecting user to place logo.png in assets folder -->
+                <img src="assets/logo.png" alt="Barate 2010 SL Logo" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="brand-logo-fallback" style="display:none;">
+                    BARATE <span>2010</span>
                 </div>
             </a>
             <ul class="nav-links" id="nav-links">
@@ -32,7 +28,7 @@
                 <li><a href="#servicios" class="nav-link">Servicios</a></li>
                 <li><a href="#certificacion" class="nav-link">Certificación</a></li>
                 <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#contacto" class="nav-cta" id="nav-cta-btn">Contactar</a></li>
+                <li><a href="#contacto" class="nav-cta" id="nav-cta-btn">Contacto</a></li>
             </ul>
             <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
@@ -42,53 +38,43 @@
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="inicio">
-        <div class="hero-bg">
-            <img src="assets/hero.png" alt="Electricista profesional Barate 2010 SL Madrid" class="hero-img">
-            <div class="hero-overlay"></div>
-            <div class="hero-grid-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Electricista Autorizado · Madrid
-            </div>
-            <h1 class="hero-title">
-                Instalaciones Eléctricas<br>
-                <span class="hero-accent">Seguras y Certificadas</span>
-            </h1>
-            <p class="hero-desc">
-                Somos tu electricista de confianza en Madrid. Con licencia oficial para certificar instalaciones eléctricas, garantizamos la seguridad y legalidad de tu hogar o negocio.
-            </p>
-            <div class="hero-actions">
-                <a href="tel:666057855" class="btn-primary" id="hero-call-btn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                    Llamar Ahora
-                </a>
-                <a href="#servicios" class="btn-secondary" id="hero-services-btn">
-                    Ver Servicios
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-num">+15</span>
-                    <span class="stat-label">Años de experiencia</span>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Licencia Oficial de la Comunidad de Madrid</div>
+                <h1 class="hero-title">
+                    Instalaciones Eléctricas<br>
+                    <span class="hero-accent">Seguras y Oficiales</span>
+                </h1>
+                <p class="hero-desc">
+                    Somos Barate 2010 SL. Especialistas con licencia oficial en Madrid para realizar, legalizar y certificar instalaciones eléctricas con total garantía.
+                </p>
+                <div class="hero-actions">
+                    <a href="tel:666057855" class="btn-primary" id="hero-call-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Llamar: 666 05 78 55
+                    </a>
+                    <a href="#servicios" class="btn-secondary" id="hero-services-btn">
+                        Ver Servicios Principales
+                    </a>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-num">100%</span>
-                    <span class="stat-label">Certificaciones oficiales</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-num">Madrid</span>
-                    <span class="stat-label">Zona de cobertura</span>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">+15</span>
+                        <span class="stat-label">Años Experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">CIE</span>
+                        <span class="stat-label">Emisión de Boletines</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">Madrid</span>
+                        <span class="stat-label">Servicio en toda la zona</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll" id="hero-scroll">
-            <span>Desplázate</span>
-            <div class="scroll-line"></div>
+            <div class="hero-img-wrap">
+                <img src="assets/hero.png" alt="Electricista Barate 2010 en Madrid" class="hero-img">
+            </div>
         </div>
     </section>
 
@@ -96,89 +82,57 @@
     <section class="section services-section" id="servicios">
         <div class="container">
             <div class="section-header">
-                <div class="section-tag">Nuestros Servicios</div>
-                <h2 class="section-title">Todo lo que necesitas<br><span class="accent">en un solo lugar</span></h2>
-                <p class="section-desc">Ofrecemos soluciones eléctricas completas para particulares y empresas en Madrid y alrededores.</p>
+                <div class="section-tag">Especialidades</div>
+                <h2 class="section-title">Todas tus necesidades eléctricas<br><span class="accent">cubiertas por profesionales</span></h2>
             </div>
             <div class="services-grid">
 
-                <div class="service-card featured" id="svc-certificacion">
+                <div class="service-card reveal" id="svc-certificacion">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                     </div>
-                    <div class="service-badge">Servicio Estrella</div>
-                    <h3>Certificación de Instalaciones</h3>
-                    <p>Emisión de certificados oficiales de instalaciones eléctricas. Trámites con los organismos competentes de la Comunidad de Madrid. Imprescindible para alquileres, ventas y contratos de luz.</p>
-                    <ul class="service-list">
-                        <li>Certificado de instalación eléctrica (CIE)</li>
-                        <li>Boletín eléctrico para compañías</li>
-                        <li>Legalización ante la Comunidad de Madrid</li>
-                    </ul>
+                    <h3>Certificados Eléctricos (CIE)</h3>
+                    <p>Emisión y firma de certificados de instalaciones eléctricas exigidos por normativa. Gestionamos el trámite para alta de luz, aumentos de potencia y regularizaciones.</p>
                 </div>
 
-                <div class="service-card" id="svc-instalaciones">
+                <div class="service-card reveal" id="svc-instalaciones" style="transition-delay: 100ms;">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
-                    <h3>Instalaciones Eléctricas</h3>
-                    <p>Nuevas instalaciones eléctricas para viviendas, locales y oficinas, cumpliendo el Reglamento Electrotécnico de Baja Tensión (REBT).</p>
-                    <ul class="service-list">
-                        <li>Instalación completa de viviendas</li>
-                        <li>Cuadros eléctricos y automatismos</li>
-                        <li>Iluminación interior y exterior</li>
-                    </ul>
+                    <h3>Instalaciones General</h3>
+                    <p>Diseño y montaje completo de instalaciones en viviendas, oficinas y locales comerciales aplicando estrictamente el Reglamento Electrotécnico de Baja Tensión.</p>
                 </div>
 
-                <div class="service-card" id="svc-reparaciones">
+                <div class="service-card reveal" id="svc-averias" style="transition-delay: 200ms;">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
                     </div>
-                    <h3>Reparaciones y Averías</h3>
-                    <p>Diagnóstico y reparación rápida de averías eléctricas. Atención ágil para que no estés sin luz más tiempo del necesario.</p>
-                    <ul class="service-list">
-                        <li>Revisión de cuadros eléctricos</li>
-                        <li>Localización y reparación de averías</li>
-                        <li>Sustitución de elementos deteriorados</li>
-                    </ul>
+                    <h3>Localización de Averías</h3>
+                    <p>Resolución de problemas urgentes. Diagnóstico de saltos de diferencial, cortocircuitos o fallos de cableado con instrumentos profesionales.</p>
                 </div>
 
-                <div class="service-card" id="svc-boletines">
+                <div class="service-card reveal" id="svc-cuadros">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM9 16v-6M15 16v-6"/></svg>
                     </div>
-                    <h3>Boletines Eléctricos</h3>
-                    <p>Tramitación de boletines eléctricos necesarios para dar de alta la luz, cambios de titularidad o ampliaciones de potencia.</p>
-                    <ul class="service-list">
-                        <li>Alta de suministro eléctrico</li>
-                        <li>Cambio de titularidad</li>
-                        <li>Aumento de potencia contratada</li>
-                    </ul>
+                    <h3>Cuadros y Protecciones</h3>
+                    <p>Actualización, saneamiento y montaje de cuadros eléctricos principales. Sustitución de fusibles e instalación de diferenciales y magnetotérmicos de alta seguridad.</p>
                 </div>
 
-                <div class="service-card" id="svc-mantenimiento">
+                <div class="service-card reveal" id="svc-iluminacion" style="transition-delay: 100ms;">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18h6m-3-3v3M12 4a5 5 0 00-5 5c0 1.5.8 2.8 2 3.5V14a1 1 0 001 1h4a1 1 0 001-1v-1.5c1.2-.7 2-2 2-3.5a5 5 0 00-5-5z"/></svg>
+                    </div>
+                    <h3>Iluminación Eficiente</h3>
+                    <p>Migración a sistemas LED de bajo consumo. Proyectos de iluminación decorativa, técnica, exterior y sistemas automatizados o inteligentes.</p>
+                </div>
+
+                <div class="service-card reveal" id="svc-mantenimiento" style="transition-delay: 200ms;">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3>Mantenimiento Preventivo</h3>
-                    <p>Revisiones periódicas de instalaciones eléctricas para prevenir averías y garantizar la seguridad a largo plazo de tus instalaciones.</p>
-                    <ul class="service-list">
-                        <li>Revisión de cuadros y protecciones</li>
-                        <li>Comprobación de tomas de tierra</li>
-                        <li>Informe técnico del estado general</li>
-                    </ul>
-                </div>
-
-                <div class="service-card" id="svc-asesoria">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </div>
-                    <h3>Asesoramiento Técnico</h3>
-                    <p>Consultoría técnica sobre instalaciones eléctricas, normativa vigente y las mejores soluciones para tu proyecto o reforma.</p>
-                    <ul class="service-list">
-                        <li>Estudio de instalaciones existentes</li>
-                        <li>Presupuestos sin compromiso</li>
-                        <li>Orientación normativa REBT</li>
-                    </ul>
+                    <h3>Mantenimiento Eléctrico</h3>
+                    <p>Revisión periódica integral de instalaciones para prevenir fallos, mejorar el rendimiento e incrementar la vida útil y la seguridad de los equipos eléctricos.</p>
                 </div>
 
             </div>
@@ -187,57 +141,56 @@
 
     <!-- ===== CERTIFICACIÓN DESTAQUE ===== -->
     <section class="cert-section" id="certificacion">
-        <div class="cert-bg-glow"></div>
         <div class="container">
             <div class="cert-inner">
                 <div class="cert-content">
-                    <div class="section-tag light">Licencia Oficial</div>
-                    <h2 class="section-title white">Electricista Autorizado para Certificar Instalaciones</h2>
-                    <p class="cert-desc">Disponemos de la habilitación oficial de la Comunidad de Madrid para emitir certificados de instalaciones eléctricas (CIE). Esto nos permite tramitar directamente todos los documentos necesarios ante los organismos competentes.</p>
+                    <div class="section-tag light">Garantía Legal</div>
+                    <h2 class="section-title">Autorizados para Certificar tu Instalación</h2>
+                    <p class="cert-desc">Barate 2010 SL es una empresa instaladora habilitada en la Comunidad de Madrid. Gestionamos el Boletín Eléctrico (CIE) sin intermediarios para aportar agilidad y precios justos.</p>
                     <div class="cert-points">
-                        <div class="cert-point">
+                        <div class="cert-point reveal">
                             <div class="cert-point-icon">✓</div>
                             <div>
-                                <strong>Certificado válido para alta de luz</strong>
-                                <p>Necesario para contratar el suministro eléctrico en tu vivienda o local comercial.</p>
+                                <strong>Válido para cualquier distribuidora</strong>
+                                <p>Certificados oficiales reconocidos para dar altas de luz con Iberdrola, Endesa, Naturgy, etc.</p>
                             </div>
                         </div>
-                        <div class="cert-point">
+                        <div class="cert-point reveal" style="transition-delay: 100ms;">
                             <div class="cert-point-icon">✓</div>
                             <div>
-                                <strong>Obligatorio para alquiler y venta</strong>
-                                <p>La instalación eléctrica debe estar certificada para formalizar contratos de arrendamiento o compraventa.</p>
+                                <strong>Gestión burocrática incluida</strong>
+                                <p>Nos comunicamos directamente con Industria y registramos de forma telemática el documento.</p>
                             </div>
                         </div>
-                        <div class="cert-point">
+                        <div class="cert-point reveal" style="transition-delay: 200ms;">
                             <div class="cert-point-icon">✓</div>
                             <div>
-                                <strong>Gestión completa de trámites</strong>
-                                <p>Nos encargamos de todo el proceso con la Comunidad de Madrid, sin que tengas que mover un papel.</p>
+                                <strong>Cambios de Tensión y Reformas</strong>
+                                <p>Requerido legalmente siempre que modifiques el cuadro o alteres más del 50% de la instalación original.</p>
                             </div>
                         </div>
                     </div>
-                    <a href="tel:666057855" class="btn-primary" id="cert-call-btn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                        Pedir Certificado
-                    </a>
                 </div>
-                <div class="cert-visual">
-                    <div class="cert-card-3d">
-                        <div class="cert-card-inner">
-                            <div class="cert-header-block">
-                                <div class="cert-logo-block">⚡</div>
-                                <div>
-                                    <div class="cert-title-sm">CERTIFICADO</div>
-                                    <div class="cert-sub-sm">Instalación Eléctrica</div>
-                                </div>
-                            </div>
-                            <div class="cert-number">CIE·2026·####</div>
-                            <div class="cert-field"><span>Empresa</span> Barate 2010 SL</div>
-                            <div class="cert-field"><span>Tipo</span> Instalación BT</div>
-                            <div class="cert-field"><span>Com. Madrid</span> Autorizado</div>
-                            <div class="cert-stamp">OFICIAL</div>
+                <!-- Premium Card Visual -->
+                <div class="cert-card-visual reveal">
+                    <div class="cert-mockup">
+                        <div class="cert-mockup-header">
+                            <div class="cert-mockup-title">CERTIFICADO OFICIAL</div>
+                            <div class="cert-mockup-sub">Instalación Eléctrica B.T.</div>
                         </div>
+                        <div class="cert-mockup-row">
+                            <span>Empresa Instaladora</span>
+                            <strong>Barate 2010 SL</strong>
+                        </div>
+                        <div class="cert-mockup-row">
+                            <span>Comunidad Autónoma</span>
+                            <strong>Madrid</strong>
+                        </div>
+                        <div class="cert-mockup-row">
+                            <span>Tipo de Inspección</span>
+                            <strong>Legalización Favorable</strong>
+                        </div>
+                        <div class="cert-stamp">VALIDADO</div>
                     </div>
                 </div>
             </div>
@@ -248,29 +201,29 @@
     <section class="section why-section" id="nosotros">
         <div class="container">
             <div class="section-header">
-                <div class="section-tag">¿Por qué elegirnos?</div>
-                <h2 class="section-title">Profesionalidad y<br><span class="accent">confianza garantizadas</span></h2>
+                <div class="section-tag">Compromiso Total</div>
+                <h2 class="section-title">Razones para confiar en Barate 2010</h2>
             </div>
             <div class="why-grid">
-                <div class="why-card" id="why-licencia">
-                    <div class="why-num">01</div>
-                    <h3>Licencia Oficial</h3>
-                    <p>Electricista habilitado por la Comunidad de Madrid para realizar y certificar instalaciones eléctricas de baja tensión.</p>
+                <div class="why-card reveal">
+                    <div class="why-num">1</div>
+                    <h3>Legalidad Absoluta</h3>
+                    <p>Empresa y personal completamente autorizados por el ministerio de industria.</p>
                 </div>
-                <div class="why-card" id="why-experiencia">
-                    <div class="why-num">02</div>
-                    <h3>Más de 15 Años</h3>
-                    <p>Amplia experiencia en todo tipo de proyectos eléctricos, desde viviendas unifamiliares hasta locales comerciales y oficinas.</p>
+                <div class="why-card reveal" style="transition-delay: 100ms;">
+                    <div class="why-num">2</div>
+                    <h3>Transparencia</h3>
+                    <p>Precios sin sorpresas y presupuestos cerrados antes de iniciar cualquier reforma.</p>
                 </div>
-                <div class="why-card" id="why-tramites">
-                    <div class="why-num">03</div>
-                    <h3>Trámites Incluidos</h3>
-                    <p>Nos encargamos de toda la gestión documental y administrativa ante los organismos de la Comunidad de Madrid.</p>
+                <div class="why-card reveal" style="transition-delay: 200ms;">
+                    <div class="why-num">3</div>
+                    <h3>Rapidez en Averías</h3>
+                    <p>Acudimos de forma prioritaria a los problemas eléctricos para evitar riesgos innecesarios.</p>
                 </div>
-                <div class="why-card" id="why-presupuesto">
-                    <div class="why-num">04</div>
-                    <h3>Presupuesto Sin Coste</h3>
-                    <p>Te ofrecemos un presupuesto detallado y personalizado sin ningún tipo de compromiso ni coste previo.</p>
+                <div class="why-card reveal" style="transition-delay: 300ms;">
+                    <div class="why-num">4</div>
+                    <h3>A medida</h3>
+                    <p>Asesoramiento honesto sobre si tu instalación necesita realmente una renovación o basta repararla.</p>
                 </div>
             </div>
         </div>
@@ -280,77 +233,74 @@
     <section class="section contact-section" id="contacto">
         <div class="container">
             <div class="section-header">
-                <div class="section-tag">Contacto</div>
-                <h2 class="section-title">Estamos aquí para ayudarte</h2>
-                <p class="section-desc">Cuéntanos tu proyecto y te haremos una propuesta sin compromiso.</p>
+                <div class="section-tag">Contactar</div>
+                <h2 class="section-title">Solicita presupuesto sin compromiso</h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-cards">
-                    <a href="tel:666057855" class="contact-card" id="contact-phone">
-                        <div class="contact-card-icon phone-icon">
+                    <a href="tel:666057855" class="contact-card reveal">
+                        <div class="contact-card-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                         </div>
                         <div class="contact-card-body">
-                            <span class="contact-label">Teléfono</span>
+                            <span class="contact-label">Hablar por teléfono</span>
                             <span class="contact-value">666 05 78 55</span>
-                            <span class="contact-action">Toca para llamar →</span>
+                            <span class="contact-action">Llamada directa →</span>
                         </div>
                     </a>
-                    <a href="mailto:barate2010@gmail.com" class="contact-card" id="contact-email">
-                        <div class="contact-card-icon email-icon">
+                    <a href="mailto:barate2010@gmail.com" class="contact-card reveal" style="transition-delay: 100ms;">
+                        <div class="contact-card-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                         </div>
                         <div class="contact-card-body">
-                            <span class="contact-label">Correo electrónico</span>
+                            <span class="contact-label">Atención por email</span>
                             <span class="contact-value">barate2010@gmail.com</span>
-                            <span class="contact-action">Enviar email →</span>
+                            <span class="contact-action">Escribir correo →</span>
                         </div>
                     </a>
-                    <div class="contact-card" id="contact-address">
-                        <div class="contact-card-icon address-icon">
+                    <div class="contact-card reveal" style="transition-delay: 200ms;">
+                        <div class="contact-card-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                         </div>
                         <div class="contact-card-body">
-                            <span class="contact-label">Dirección</span>
+                            <span class="contact-label">Oficina principal</span>
                             <span class="contact-value">C/ Carlos Martín Álvarez 65</span>
                             <span class="contact-action">28018 Madrid (MADRID)</span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrap">
+                
+                <div class="contact-form-wrap reveal">
                     <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
-                        <h3>Solicita tu presupuesto</h3>
+                        <h3>Déjanos tu mensaje</h3>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellidos" required>
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Número de móvil o fijo" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="asunto">Servicio que necesitas</label>
+                            <label for="asunto">Servicio de interés</label>
                             <select id="asunto" name="asunto" required>
-                                <option value="" disabled selected>Selecciona un servicio</option>
-                                <option value="certificacion">Certificación de instalación</option>
-                                <option value="boletin">Boletín eléctrico</option>
-                                <option value="instalacion">Nueva instalación</option>
-                                <option value="reparacion">Reparación / Avería</option>
-                                <option value="mantenimiento">Mantenimiento</option>
-                                <option value="otro">Otro / Consulta general</option>
+                                <option value="" disabled selected>Despliega y escoge</option>
+                                <option value="boletin">Boletín o Certificado CIE</option>
+                                <option value="instalacion">Nueva Instalación / Reforma</option>
+                                <option value="averia">Avería urgente</option>
+                                <option value="cuadro">Cuadros eléctricos</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="mensaje">Cuéntanos más</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente tu necesidad..."></textarea>
+                            <label for="mensaje">Detalles</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Indícanos los metros de la vivienda, tipo de avería o cualquier detalle importante..."></textarea>
                         </div>
                         <button type="submit" class="btn-primary full-width" id="form-submit-btn">
-                            Enviar Solicitud
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+                            Enviar Consulta Rápida
                         </button>
-                        <p class="form-privacy">Al enviar aceptas que nos pongamos en contacto contigo para gestionar tu solicitud.</p>
+                        <p class="form-privacy">Información gestionada directamente por nuestro correo oficial.</p>
                     </form>
                 </div>
             </div>
@@ -362,94 +312,74 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="nav-logo">
-                        <div class="logo-icon">⚡</div>
-                        <div class="logo-text">
-                            <span class="logo-brand">Barate 2010</span>
-                            <span class="logo-sub">Electricidad</span>
-                        </div>
+                    <img src="assets/logo.png" alt="Barate 2010 SL" class="brand-logo" style="margin-bottom: 20px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+                    <div class="brand-logo-fallback" style="display:none; margin-bottom: 20px;">
+                        BARATE <span>2010</span>
                     </div>
-                    <p class="footer-tagline">Electricista autorizado en Madrid. Certificaciones, instalaciones y reparaciones eléctricas con garantía oficial.</p>
+                    <p class="footer-tagline">Barate 2010 SL ofrece soluciones seguras para todo tipo de instalaciones eléctricas en la Comunidad de Madrid, apoyadas en licencias oficiales.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Servicios</h4>
+                    <h4>Navegación</h4>
                     <ul>
-                        <li><a href="#certificacion">Certificación eléctrica</a></li>
-                        <li><a href="#servicios">Boletines eléctricos</a></li>
-                        <li><a href="#servicios">Instalaciones</a></li>
-                        <li><a href="#servicios">Reparaciones</a></li>
-                        <li><a href="#servicios">Mantenimiento</a></li>
+                        <li><a href="#inicio">Inicio principal</a></li>
+                        <li><a href="#servicios">Especialidades</a></li>
+                        <li><a href="#certificacion">Sobre Autorizaciones CIE</a></li>
+                        <li><a href="#nosotros">Por qué elegirnos</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contacto</h4>
+                    <h4>Vías de Contacto</h4>
                     <ul>
-                        <li><a href="tel:666057855">666 05 78 55</a></li>
-                        <li><a href="mailto:barate2010@gmail.com">barate2010@gmail.com</a></li>
-                        <li>C/ Carlos Martín Álvarez 65<br>28018 Madrid (MADRID)</li>
+                        <li><a href="tel:666057855">📞 666 05 78 55</a></li>
+                        <li><a href="mailto:barate2010@gmail.com">✉️ barate2010@gmail.com</a></li>
+                        <li>📍 C/ Carlos Martín Álvarez 65<br>28018 Madrid, España</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Barate 2010 SL. Todos los derechos reservados.</p>
-                <p>Electricista autorizado · Comunidad de Madrid</p>
+                <p>© 2026 Barate 2010 SL. Reservados todos los derechos.</p>
+                <p>Electricistas Oficiales de Madrid</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // ----- Navbar scroll effect -----
+        // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 20) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
         });
 
-        // ----- Mobile menu toggle -----
+        // Mobile menu
         const navToggle = document.getElementById('nav-toggle');
         const navLinks = document.getElementById('nav-links');
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('open');
             navToggle.classList.toggle('active');
         });
-        navLinks.querySelectorAll('a').forEach(link => {
+        document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
                 navToggle.classList.remove('active');
             });
         });
 
-        // ----- Smooth scroll for nav links -----
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // ----- Intersection Observer for reveal animations -----
+        // Reveal animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(el => {
                 if (el.isIntersecting) {
                     el.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        document.querySelectorAll('.service-card, .why-card, .contact-card, .cert-point').forEach(el => {
-            el.classList.add('reveal');
-            observer.observe(el);
-        });
-
-        // ----- Contact form submit (mailto fallback) -----
+        // Form submit MailTo fallback
         function handleSubmit(e) {
             e.preventDefault();
             const nombre = document.getElementById('nombre').value;
@@ -457,9 +387,10 @@
             const asunto = document.getElementById('asunto').value;
             const mensaje = document.getElementById('mensaje').value;
             const body = encodeURIComponent(
-                `Nombre: ${nombre}\nTeléfono: ${telefono}\nServicio: ${asunto}\n\n${mensaje}`
+                `SOLICITUD DE PRESUPUESTO BARATE 2010\n\nNombre: ${nombre}\nTeléfono: ${telefono}\nAsunto/Servicio: ${asunto}\n\nMensaje:\n${mensaje}`
             );
-            window.location.href = `mailto:barate2010@gmail.com?subject=Solicitud de presupuesto - ${asunto}&body=${body}`;
+            window.location.href = `mailto:barate2010@gmail.com?subject=Presupuesto Web Barate 2010 - ${asunto}&body=${body}`;
+            document.getElementById('contact-form').reset();
         }
     </script>
 </body>
